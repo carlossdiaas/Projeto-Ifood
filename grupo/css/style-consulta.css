@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .bg-danger {
+    background-color: #dc3545 !important;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #E74C3C;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Itens do menu na sidebar */
+.menu-item {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #C0392B;
+}
+
+.menu-item img.icon {
+    width: 24px;
+    margin-right: 10px;
+}
+  .nav-pills .nav-link.active {
+    background-color: #fff;
+    color: #dc3545;
+  }
+  
+  .card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+  }
+  
+  .card-body p {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .card-header {
+    font-size: 1.3rem;
+  }
+  
+  .list-group-item {
+    font-size: 1.1rem;
+  }
+  

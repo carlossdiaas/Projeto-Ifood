@@ -1,0 +1,137 @@
+/* Reset e layout básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container principal usando display flex */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar com flexbox e classes de espaçamento do Bootstrap */
+.sidebar {
+    width: 200px;
+    background-color: #E74C3C;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Itens do menu na sidebar */
+.menu-item {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #C0392B;
+}
+
+.menu-item img.icon {
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* Conteúdo principal com padding e fundo */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #E5E7E9;
+}
+
+/* Estilização do título principal */
+h1 {
+    color:     color#c0392b;   
+    margin-bottom: 20px;
+}
+
+/* Dashboard com cartões usando classes de grid do Bootstrap */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+/* Estilização das seções de saldo, custo e lucro */
+.saldo h2 {
+    color: #2980B9;
+}
+
+.custos h2 {
+    color: #E74C3C;
+}
+
+.lucro h2 {
+    color: #27AE60;
+}
+
+/* Seção de pedidos recentes */
+.pedidos h2 {
+    margin-bottom: 10px;
+}
+
+/* Cartão de pedido com layout flex e margens */
+.pedido {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Reduzir padding */
+    margin-bottom: 8px; /* Diminuir espaçamento entre pedidos */
+    max-height: 80px; /* Limitar altura do pedido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ajustar o layout dos pedidos */
+.pedido-info {
+    display: flex;
+    align-items: center;
+    max-width: 65%; /* Reduzir a largura da parte de informações */
+}
+
+/* Limitar o tamanho das imagens dos ícones */
+.pedido-info img.icon {
+    width: 24px; /* Ajuste o tamanho aqui conforme necessário */
+    max-width: 100%; /* Evitar que a imagem estoure do seu contêiner */
+    height: auto;
+    margin-right: 5px; /* Ajustar o espaçamento do ícone */
+}
+
+/* Controlar a largura da coluna de detalhes */
+.pedido-details {
+    text-align: right;
+    max-width: 35%; /* Ajustar largura da coluna de detalhes */
+}
+
+.pedido-details span, .pedido-details strong {
+    font-size: 0.85rem; /* Reduzir tamanho da fonte */
+}
+
+/* Reduzir margens later
